@@ -11,7 +11,7 @@ Technical lead, smart contracts overseeing, UI development
 Smart contracts deployment, UI development
 
 <a href="https://linktr.ee/alexdatascience">@akornyukhin</a><br>
-Smart contracts development and unit testing, deployment and UI development support
+Smart contracts development and unit testing, UI development, deployment support
 
 <h2>What has changed</h2>
 
