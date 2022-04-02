@@ -7,7 +7,7 @@ Fantom Testnet version: https://testnet.divinedao.finance/
 <a href="https://github.com/cotyar">@cotyar</a><br>
 Technical lead, smart contracts overseeing, UI development
 
-@iamspector: <a href="https://github.com/iamspector">GitHub</a>, <a href="https://www.linkedin.com/in/dshmelev/">LinkedIn</a><br>
+<a href="https://github.com/iamspector">@iamspector</a><br>
 Smart contracts deployment, UI development
 
 <a href="https://linktr.ee/alexdatascience">@akornyukhin</a><br>
