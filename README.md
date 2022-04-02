@@ -4,13 +4,13 @@ Fantom Testnet version: https://testnet.divinedao.finance/
 
 <h2>Team</h2>
 
-<a href="https://github.com/cotyar" target="_blank">@cotyar</a><br>
+<a href="https://github.com/cotyar">@cotyar</a><br>
 Technical lead, smart contracts overseeing, UI development
 
-<a href="https://github.com/iamspector" target="_blank">@iamspector</a><br>
+@iamspector: <a href="https://github.com/iamspector">GitHub</a>, <a href="https://www.linkedin.com/in/dshmelev/">LinkedIn</a><br>
 Contracts deployment, UI development
 
-<a href="https://linktr.ee/alexdatascience" target="_blank">@akornyukhin</a><br>
+<a href="https://linktr.ee/alexdatascience">@akornyukhin</a><br>
 Smart contracts development and unit testing, deployment and UI development support
 
 <h2>What has changed</h2>
@@ -56,7 +56,7 @@ npx hardhat test
 ```
 
 <h2>To setup local version</h1>
-Prerequisites: install <a href="https://trufflesuite.com/ganache/index.html" target="_blank">Ganache</a>
+Prerequisites: install <a href="https://trufflesuite.com/ganache/index.html">Ganache</a>
 
 ```
 npm i
