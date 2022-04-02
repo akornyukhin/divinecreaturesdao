@@ -2,6 +2,17 @@
 
 Fantom Testnet version: https://testnet.divinedao.finance/
 
+<h2>Team</h2>
+
+<a href="https://github.com/cotyar" target="_blank">@cotyar</a><br>
+Technical lead, smart contracts overseeing, UI development
+
+<a href="https://github.com/iamspector" target="_blank">@iamspector</a><br>
+Contracts deployment, UI development
+
+<a href="https://linktr.ee/alexdatascience" target="_blank">@akornyukhin</a><br>
+Smart contracts development and unit testing, deployment and UI development support
+
 <h2>What has changed</h2>
 
 1. Deduplication in contract definitions.
@@ -35,9 +46,25 @@ Please note that some checks in Bonds (vesting term) are adjusted for testing pu
 Same apply to staking rebase time - production rebase time will be 8 hours.
 The commented minting bit in Egis constructor is for initial supply minting for presale.
 
-<h1>To run the tests</h1>
+<h2>To run the tests</h1>
 
-1. npm i
-2. cd onchain
-3. npx hardhat compile
-4. npx hardhat test
+```
+npm i
+cd onchain
+npx hardhat compile
+npx hardhat test
+```
+
+<h2>To setup local version</h1>
+Prerequisites: install <a href="https://trufflesuite.com/ganache/index.html" target="_blank">Ganache</a>
+
+```
+npm i
+cd onchain
+npx hardhat compile
+npx hardhat run --network ganacheui ../scripts/deployToNet.ts
+cd ..
+npm run
+```
+
+If you will face some problem reaching for the contracts from UI check Ganache port - the repo is configured to listen to ```7545```
