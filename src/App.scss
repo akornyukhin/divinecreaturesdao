@@ -1,0 +1,342 @@
+// 1. Your custom variables and variable overwrites.
+// $global-link-color: #DA7D02;
+$color-extra: #dbf501;
+$color-silver: #B4E6FE;
+$color-bronze: #D07700;
+$color-red: #ca1b1b;
+$our-darker: #989797;
+
+$global-primary-background: #0a036c;
+$global-secondary-background: #040223;
+// $global-muted-background: #dbf501;
+$button-default-background: $color-extra;
+$button-default-hover-color: $color-extra;
+$button-alert-background: #470000;
+// $global-emphasis-color: #dbf501;
+
+// $global-inverse-color: #0a036c;
+
+$custom-border-color: #13728b;
+
+@font-face {
+    font-family: 'Rany';
+    src: url("assets/fonts/Rany.otf") format('opentype');
+}
+
+// 2. Import default variables and available mixins.
+@import "uikit/src/scss/variables-theme.scss";
+@import "uikit/src/scss/mixins-theme.scss";
+
+// 3. Your custom mixin overwrites.
+// @mixin hook-card() { color: #000; }
+
+// 4. Import UIkit.
+@import "uikit/src/scss/uikit-theme.scss";
+
+// .uk-card-secondary {
+//   background-color: $global-inverse-color
+// }
+
+// input[type="text"], input[type="text"], textarea {
+//   background-color: $global-primary-background;
+// }
+
+html, body {
+  margin: 0;
+  height: 100%;
+  width:100%;
+  padding:0;
+  background: rgb(17,7,156);
+  background: linear-gradient(90deg, rgba(17,7,156,1) 0%, rgba(0,4,12,1) 100%);
+  font-family: 'Rany';
+  overscroll-behavior: none;
+}
+
+// aside {
+// 	width:100%;
+// }
+
+nav {
+  margin: 0% 10% 0% 10%;
+}
+
+.uk-button {
+  border-radius: 10px;
+}
+
+.uk-input {
+  border-radius: 10px;
+}
+
+// .uk-range {
+//   border: 1px solid $custom-border-color;
+//   border-color: $custom-border-color;
+// }
+
+.uk-card {
+	border-radius: 0px 0px 10px 10px;
+}
+
+.nav-button {
+	background-color: $global-primary-background !important;
+	border-color: $color-extra !important;
+	color: white !important;
+	&:hover {
+		background-color: $color-extra !important;
+		border-color: $global-primary-background !important;
+		color: #333 !important;
+    }
+}
+
+.nav-button-inverted {
+	background-color: $color-extra !important;
+	border-color: $global-primary-background !important;
+	color: #333 !important;
+	&:hover {
+		background-color: $global-primary-background !important;
+		border-color: $color-extra !important;
+		color: white !important;
+    }
+}
+
+.nav-button-alert {
+	background-color: $color-red !important;
+	border-color: $global-primary-background !important;
+	color: white !important;
+	font-weight: bold;
+	&:hover {
+		background-color: $button-alert-background !important;
+		border-color: $global-primary-background !important;
+		color: white !important;
+    }
+}
+
+.form-input-blue {
+	background-color: $global-primary-background !important;
+}
+
+.evil-text {
+	color: white !important;
+	font-family: 'Rany' !important;
+}
+
+.extra-text {
+	color: $color-extra !important;
+	font-family: 'Rany' !important;
+}
+
+.extra-color {
+	color: $color-extra !important;
+}
+
+.extra-border {
+	border-width: 1px;
+	border-style: solid;
+	border-color: $color-extra;
+	border-bottom-radius: 2px;
+}
+
+.border-gold {
+	border-color: $color-extra;
+}
+
+.border-silver {
+	border-color: $color-silver;
+}
+
+.border-bronze {
+	border-color: $color-bronze;
+}
+
+// Removing arrows from <input type=number/>
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+.in-input-button {
+  padding-right: 1rem;
+  justify-content: end;
+}
+
+.nft-image {
+  //border-bottom-width: 2px;
+  border-style: solid;
+}
+
+.our-darker {
+	color: $our-darker !important;
+}
+
+.nft-tab::before {
+	border-bottom-color: $global-primary-background;
+}
+.nft-tab > * > a {
+	border-bottom-color: $global-primary-background;
+	color: $our-darker;
+}
+
+.nft-tab > .uk-active > a {
+	 border-bottom-color: white;
+	 color: white;
+ }
+
+ .overview-text {
+	color: white;
+	font-family: "Rany";
+ }
+
+/* Left bar */
+#left-col {
+  // position: fixed;
+  left: 0;
+  top:0;
+  bottom:0;
+  overflow-x: hidden;
+  overflow-y: auto;
+  //background-color: $global-secondary-background;
+  width: 240px;
+//   height: 100%;
+  // z-index:2;
+  transition: height 0.3s ease-out;
+}
+/* Left bar links */
+#left-col ul.uk-nav-default > li > a {
+	padding: 8px 20px;
+	border-left: 2px solid transparent;
+	transition: all 0.15s ease-out;
+}
+#left-col ul.uk-nav-default li.uk-nav-header {
+	padding:  20px 20px 8px 20px;
+}
+
+#left-col ul.uk-nav-default > li > a:hover, #left-col ul.uk-nav-default > li.uk-open > a {
+	border-left: 2px solid #39f;
+	padding-left: 30px;
+	color: white;
+	background-color: rgba(0,0,0,0.1);
+}
+#left-col ul.uk-nav-default li .uk-nav-sub {
+	padding-left: 34px;
+}
+#left-col .uk-dropdown.user-drop {
+	min-width: 160px;
+	max-width: 160px;
+	padding: 0.75rem;
+}
+/* Drop arrow */
+#left-col .uk-dropdown.user-drop:after {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	// pointer-events: none;
+	border-color: rgba(255, 255, 255, 0);
+	border-bottom-color: #fff;
+	border-width: 4px;
+	margin-left: -4px;
+}
+.left-content-box {
+	padding: 0.75rem 20px;
+	border-top: 1px solid rgba(255,255,255,0.06);
+	margin-bottom: -1px;
+}
+.left-nav-wrap {
+	padding-bottom: 60px;
+}
+.content-box-dark {
+	background-color: rgba(0,0,0,0.09);
+}
+.text-light {
+	font-weight: 200;
+	font-size: 1.25rem;
+}
+.bar-bottom {
+	border-top: 1px solid rgba(255,255,255,0.07);
+	padding: 15px 0;
+   background-color: #222A30;
+   position: fixed;
+   left: 0;
+   right: 0;
+   z-index: 3;
+   bottom: 0;
+   width: 240px;
+}
+.left-logo {
+	/* navbar height */
+	height: 52px;
+	line-height: 52px;
+	padding: 0 20px;
+}
+.custom-logo {
+	height: 32px;
+}
+.profile-img {
+	width: 60px;
+	margin: 0 auto 10px auto;
+	display: block;
+}
+.panel-icons {
+	margin: 0 4px;
+}
+.uk-tooltip {
+	background-color: white;
+	color: #242C33;
+	box-shadow: 0 2px 12px rgba(50,50,50,0.1);
+}
+
+
+
+
+
+
+
+
+// .App {
+//   text-align: center;
+// }
+
+// .App-logo {
+//   height: 40vmin;
+//   pointer-events: none;
+// }
+
+// @media (prefers-reduced-motion: no-preference) {
+//   .App-logo {
+//     animation: App-logo-spin infinite 20s linear;
+//   }
+// }
+
+// .App-header {
+//   background-color: #282c34;
+//   min-height: 100vh;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: center;
+//   justify-content: center;
+//   font-size: calc(10px + 2vmin);
+//   color: white;
+// }
+
+// .App-link {
+//   color: #61dafb;
+// }
+
+// @keyframes App-logo-spin {
+//   from {
+//     transform: rotate(0deg);
+//   }
+//   to {
+//     transform: rotate(360deg);
+//   }
+// }
